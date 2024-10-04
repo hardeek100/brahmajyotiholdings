@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 import Home from '../components/Home';
 import About from "../components/About";
@@ -17,7 +17,7 @@ function RouteHandler() {
         <Router>
 
             <div className='link-container'>
-                <img src={logo} className='logo'></img>
+                <img src={logo} className='logo' alt='logo'></img>
 
                 {ROUTELIST.map((r, i) => (
 
