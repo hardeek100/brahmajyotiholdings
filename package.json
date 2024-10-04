@@ -11,6 +11,7 @@
     "@types/react": "^18.3.10",
     "@types/react-dom": "^18.3.0",
     "antd": "^5.21.2",
+    "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.26.2",
@@ -18,11 +19,14 @@
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
+  "homepage": "https://hardeek100.github.io/brahmajyotiholdings",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+     "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
