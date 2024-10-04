@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/brahmajyotiholdings/static/css/main.9951e4cb.css",
-    "main.js": "/brahmajyotiholdings/static/js/main.b37fc6e0.js",
+    "main.js": "/brahmajyotiholdings/static/js/main.d74bb10d.js",
     "static/media/logo.svg": "/brahmajyotiholdings/static/media/logo.9202647e8e1238445e214b428f12dab8.svg",
     "static/media/memorandum.pdf": "/brahmajyotiholdings/static/media/memorandum.f58b56d4c9f2aba8bd66.pdf",
     "index.html": "/brahmajyotiholdings/index.html",
     "main.9951e4cb.css.map": "/brahmajyotiholdings/static/css/main.9951e4cb.css.map",
-    "main.b37fc6e0.js.map": "/brahmajyotiholdings/static/js/main.b37fc6e0.js.map"
+    "main.d74bb10d.js.map": "/brahmajyotiholdings/static/js/main.d74bb10d.js.map"
   },
   "entrypoints": [
     "static/css/main.9951e4cb.css",
-    "static/js/main.b37fc6e0.js"
+    "static/js/main.d74bb10d.js"
   ]
 }
