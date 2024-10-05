@@ -1,5 +1,5 @@
 .logo{
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
@@ -7,19 +7,19 @@
     display: flex;
   justify-content: left; /* Centers the links horizontally */
   align-items: center; /* Centers the items vertically */
-  background: #7F87C7; /* Blue gradient */
+  background: #333; /* Blue gradient */
   padding: 20px; /* Adds some padding around the container */
   width: 100%;
-  height: 6vh; 
+  height: auto; 
 }
 
 .link-item{
     text-decoration: none;
     color: white;
-    padding: 50px 20px;
+    padding: 50px 30px 10px 10px;
     margin: 0 10px;
     font-size: 18px;
-    background-color: #B8BEE0;
+    background-color: #415A77;
 
     position: relative;
     transition: color 0.3s, transform 0.3s;
@@ -32,19 +32,35 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the text */
   }
 
+.page-side{
+    background-color: #E3E5F3;
+    height: 100%;
+    background-image: url('../media/logo.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+    margin-left: 150px;
+}
+
 .page{
     background-color: #E3E5F3;
-    height: auto;
-    
+    height: 100%;
+    background-image: url('../media/logo.png');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat;
+   
 }
+
+
 
 .container1{
     text-decoration: none;
-    color: black; /* White text for links */
+    color: #E0E1DD; /* White text for links */
     padding: 40px 40px; /* Adds some padding around each link */
     margin: 0 10px; /* Adds spacing between links */
     font-size: 20px; 
-    background-color: #A9B0DA;
+    background-color: #778DA9;
     
     align-items: center;
 }
@@ -58,6 +74,19 @@
     align-items: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+    color: #000;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.title-secondary{
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 100px;
+    height: 100px;
 }
 
 
@@ -80,4 +109,70 @@
   .download-button:hover {
     background-color: #218838; /* Darker green on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+
+  .top-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .top-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .top-nav a:hover {
+    background-color: #575757;
+  }
+  
+  /* Side navigation styles (for smaller screens) */
+  .side-nav {
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+    display: none; /* Default is hidden */
+  }
+  
+  .side-nav a {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+  }
+  
+  .side-nav a:hover {
+    background-color: #575757;
+  }
+  
+  /* Show side-nav when screen width is less than 768px */
+  @media screen and (max-width: 768px) {
+    .top-nav {
+      display: none;
+    }
+  
+    .side-nav {
+      display: block;
+    }
+  }
+
+  .form{
+    background-color: white;
+    width: 500px;
+    padding: 10px
+  }
+
+  .form-container{
+    background-color: #333;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
   }

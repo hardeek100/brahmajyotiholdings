@@ -1,6 +1,6 @@
 import Home from "../components/Home"
 import About from "../components/About"
-import Careers from "../components/Careers"
+import Joinus from "../components/Joinus"
 import Contact from "../components/Contact"
 
 
@@ -16,9 +16,9 @@ export const ROUTELIST = [
         name: "About Us"
     },
     {
-        path: "/careers",
-        element: <Careers/>,
-        name: "Careers"
+        path: "/joinus",
+        element: <Joinus/>,
+        name: "Join Us"
     },
     {
         path: "/contact",

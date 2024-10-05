@@ -6,6 +6,7 @@ const About = () => {
 
     return(
         <div>
+            <h1 className="title">Brahma Jyoti Holding Limited (BJHL)</h1>
              <div className="align-two"> 
             <div className="container1">
                 <h2>Vision</h2>
