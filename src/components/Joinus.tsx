@@ -5,13 +5,24 @@ const Joinus = () => {
 
     const [success, setSuccess] = useState(false);
     const [submitted, setSubmitted] = useState(false);
+    const [isLoading, setIsLoading] = useState(false);
 
-    const onFinish = (values: any) => {
+    const onFinish = async (values: any) => {
         console.log('Form values:', values);
         // You can perform additional actions here (e.g., API call)
+        
         setSubmitted(true);
+     
         if(validationCheck(values)){
-            setSuccess(true);
+            setIsLoading(true);
+            if(await sendRequest(values)){
+                setIsLoading(false);
+                setSuccess(true);
+            }else{
+                setIsLoading(false);
+                setSuccess(false);
+            }
+           
         }
         
 
@@ -25,6 +36,34 @@ const Joinus = () => {
 
         return true;
       }
+
+
+      async function sendRequest(values: any): Promise<boolean>{
+        try {
+            const response = await fetch('http://localhost:8000/api/hello/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values),
+            });
+
+            if (!response.ok) {
+                console.log(response)
+                throw new Error('Network response was not ok');
+            }
+
+            const jsonResponse = await response.json();
+            console.log(jsonResponse); // Handle the response as needed
+            return true;
+        } catch (error) {
+            console.error('There was a problem with your fetch operation:', error);
+        }
+
+
+        return false;
+      } 
+
 
       // Handle form submission errors (optional)
       const onFinishFailed = (errorInfo: any) => {
@@ -44,7 +83,7 @@ const Joinus = () => {
                     <Form.Item label="Name" required tooltip="Enter your full name" name="name">
                         <Input placeholder="input placeholder" />
                     </Form.Item>
-                    <Form.Item label="Phone Number" required tooltip="This is a required field" name="phone">
+                    <Form.Item label="Phone Number" required tooltip="This is a required field" name="phonenumber">
                         <Input placeholder="input placeholder" />
                     </Form.Item>
                     <Form.Item label="Address" required tooltip="This is a required field" name="address">
