@@ -1,67 +1,18 @@
 .logo{
-    width: 150px;
+    width: 120px;
     height: auto;
-}
-
-.link-container{
-    display: flex;
-  justify-content: left; /* Centers the links horizontally */
-  align-items: center; /* Centers the items vertically */
-  background: #333; /* Blue gradient */
-  padding: 20px; /* Adds some padding around the container */
-  width: 100%;
-  height: auto; 
-}
-
-.link-item{
-    text-decoration: none;
-    color: white;
-    padding: 50px 30px 10px 10px;
-    margin: 0 10px;
-    font-size: 18px;
-    background-color: #415A77;
-
-    position: relative;
-    transition: color 0.3s, transform 0.3s;
-}
-
-.link-item:hover {
-    color: #ffdd57; /* Change link color on hover */
-    background-color: #3E4A8E;
-    transform: translateY(-5px) scale(1.1); /* Move up and slightly enlarge */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow to the text */
-  }
-
-.page-side{
-    background-color: #E3E5F3;
-    height: 100%;
-    background-image: url('../media/logo.png');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-    margin-left: 150px;
-}
-
-.page{
-    background-color: #E3E5F3;
-    height: 100%;
-    background-image: url('../media/logo.png');
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat;
-   
 }
 
 
 
 .container1{
-    text-decoration: none;
-    color: #E0E1DD; /* White text for links */
+    
+    color: white;
     padding: 40px 40px; /* Adds some padding around each link */
     margin: 0 10px; /* Adds spacing between links */
     font-size: 20px; 
-    background-color: #778DA9;
-    
+    background-color: #0F4C75;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-items: center;
 }
 
@@ -72,7 +23,7 @@
 
 .title{
     align-items: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
     color: #000;
     background-color: white;
@@ -89,7 +40,56 @@
     height: 100px;
 }
 
+/* router.css */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+}
 
+.link-item {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 0;
+}
+
+.link-item:hover {
+  color: #007bff;
+}
+
+.logo {
+  width: 100px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+  }
+}
+.logo {
+  width: 100px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.nav-link:hover {
+  color: #007bff;
+}
+
+/* Dropdown menu on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0; /* Adjust margin to prevent unwanted spacing */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Optional: Adds hover effect on dropdown items */
+}
 .download-container {
     display: flex;
     justify-content: center; /* Center the button */

@@ -1,7 +1,8 @@
 import Home from "../components/Home"
 import About from "../components/About"
-import Joinus from "../components/Joinus"
+import ApplyShare from "../components/Joinus"
 import Contact from "../components/Contact"
+import News from "../components/News"
 
 
 export const ROUTELIST = [
@@ -16,9 +17,14 @@ export const ROUTELIST = [
         name: "About Us"
     },
     {
-        path: "/joinus",
-        element: <Joinus/>,
-        name: "Join Us"
+        path: "/news",
+        element: <News/>,
+        name: "News"
+    },
+    {
+        path: "/applyshare",
+        element: <ApplyShare/>,
+        name: "Apply for Share"
     },
     {
         path: "/contact",

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../router/router.css";
 import { Form, Input, Button } from 'antd';
-const Joinus = () => {
+const ApplyShare = () => {
 
     const [success, setSuccess] = useState(false);
     const [submitted, setSubmitted] = useState(false);
@@ -113,4 +113,4 @@ const Joinus = () => {
 }
 
 
-export default Joinus;
+export default ApplyShare;
